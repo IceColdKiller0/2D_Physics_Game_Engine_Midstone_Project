@@ -3,7 +3,7 @@
 //math to test if two circles are intersecting
 float Distance(Vec2 a, Vec2 b)
 {
-    return sqrt((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2);
+    //return sqrt((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2);
 }
 
 bool UnoptimizedCircle(Circle a, Circle b)
@@ -16,10 +16,10 @@ bool OptimizedCircle(Circle a, Circle b)
 {
     float r = a.radius + b.radius;
     r *= r;
-    return r < (a.x + b.x) ^ 2 + (a.y + b.y) ^ 2;
+    //return r < (a.x + b.x) ^ 2 + (a.y + b.y) ^ 2;
 }
 
-void ResolveCollision(Object A, Object B)
-{
-    Vec2 RelativeVelocity = Velocity.b - Velocity.a;
-}
+//void ResolveCollision(Object A, Object B)
+//{
+   // Vec2 RelativeVelocity = Velocity.b - Velocity.a;
+//}
