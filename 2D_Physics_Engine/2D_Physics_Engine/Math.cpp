@@ -19,3 +19,7 @@ bool OptimizedCircle(Circle a, Circle b)
     return r < (a.x + b.x) ^ 2 + (a.y + b.y) ^ 2;
 }
 
+void ResolveCollision(Object A, Object B)
+{
+    Vec2 RelativeVelocity = Velocity.b - Velocity.a;
+}
